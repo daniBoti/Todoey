@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -32,7 +31,13 @@
                             <outlet property="delegate" destination="FBp-n5-ruw" id="8MM-2r-Wfm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Todoey" id="kbU-3D-LYe"/>
+                    <navigationItem key="navigationItem" title="Todoey" id="kbU-3D-LYe">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="p0k-dH-huJ">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="FBp-n5-ruw" id="cbi-OU-vaD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cqX-qG-0wC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
