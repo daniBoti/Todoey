@@ -97,7 +97,7 @@ class TodoListViewController: UITableViewController {
     }
     
     func loadItems(with request: NSFetchRequest<Item> = Item.fetchRequest(),
-                   predicate: NSPredicate) {
+                   predicate: NSPredicate? = nil) {
         
         
         
